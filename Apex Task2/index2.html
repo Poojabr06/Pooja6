@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Responsive Form with To-Do List</title>
+</head>
+<body>
+    <header>
+        
+       
+        <p1>SPORTS EVENT</p1>
+        <p>Our school sports program is designed to encourage students to participate in physical activities that build strength, coordination, teamwork, and resilience. With a wide variety of sports offerings and state-of-the-art facilities, students of all skill levels are given opportunities to develop their athletic abilities and foster a love for sports.
+          Sports Offered:
+            Team Sports: Includes soccer, basketball, cricket, volleyball, and baseball. These sports emphasize teamwork, strategy, and communication.
+            
+            Individual Sports: Track and field events, tennis, swimming, and badminton allow students to set personal goals and challenge their own limits.
+            
+            Fitness Programs: Yoga, gymnastics, and strength training are available to support overall fitness and flexibility.
+            
+            Annual Sports Day:
+            Sports Day is a major event in our school, held annually to showcase the skills of our student athletes. Competitions across various categories allow students to participate in relay races, long jump, high jump, and other field events. Medals and awards are presented to top performers, encouraging a spirit of healthy competition.
+            
+            Inter-School Competitions:
+            The school participates in various inter-school tournaments, providing students with opportunities to compete at district, state, and national levels. These competitions build exposure and boost confidence while enabling students to interact with peers from other schools.
+            
+            Physical Education Classes:
+            Regular physical education (PE) classes are part of the curriculum, allowing students to engage in structured exercise and sports activities under the guidance of qualified instructors. PE classes focus on fitness, agility, endurance, and understanding sportsmanship values.
+            Benefits of Sports in School:
+            
+            Physical Health: Regular participation in sports enhances cardiovascular health, muscle strength, and overall fitness.
+            
+            Mental Well-being: Sports relieve stress, improve focus, and promote a positive outlook. Engaging in physical activities is known to enhance mood and energy levels.
+            
+            Life Skills: Sports teach discipline, perseverance, teamwork, and leadership—skills essential for success in all areas of life.
+            </p>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.Qxagv3ceIsv4l6KjkSTz4wHaFN&pid=Api&P=0&h=180" alt="School Image">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.50GlToG2ELM2C5m20rYTOgHaE7&pid=Api&P=0&h=180" alt="School Image">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.-qeVxcl8l3PItK-fKG6HWwHaE8&pid=Api&P=0&h=180" alt="School Image">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.BkpehiZADtME3gE4l3E3KQHaHa&pid=Api&P=0&h=180" alt="School Image">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.vEuGJSN8HTIaPuANC6Na4wHaFP&pid=Api&P=0&h=180" alt="School Image">
+        <nav>
+            <ul>
+                <li><a href="#form">Form</a></li>
+                <li><a href="#todo">To-Do List</a></li>
+                <li><a href="#gallery">Image Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="form">
+            <h2>Input Form</h2>
+            <form id="myForm" onsubmit="return validateForm()">
+                <label for="name">Name (required):</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email (required):</label>
+                <input type="email" id="email" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="todo">
+            <h2>To-Do List</h2>
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button onclick="addTask()">Add Task</button>
+            <ul id="taskList"></ul>
+        </section>
+
+        <section id="gallery">
+            <h2>Image Gallery</h2>
+            <input type="text" id="imageUrl" placeholder="Image URL">
+            <button onclick="addImage()">Add Image</button>
+            <div id="imageGallery" class="grid"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
